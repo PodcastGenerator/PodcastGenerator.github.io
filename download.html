@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Podcast Generator</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<style type="text/css">
+		.icon-block {
+			padding: 0 15px;
+		}
+		.icon-block .material-icons {
+			font-size: inherit;
+		}
+		body {
+			display: flex;
+			min-height: 100vh;
+			flex-direction: column;
+		}
+
+		main {
+			flex: 1 0 auto;
+		}
+
+		.release {
+			border-style: solid;
+			border-color: black;
+			border-radius: 15px;
+			border-width: 1px;
+			padding: 20px;
+			background-color: #2ecc71;
+			color: white;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="nav-wrapper green darken-1">
+				<a href="index.html" class="brand-logo">PodcastGenerator</a>
+				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="download.html">Download</a></li>
+					<li><a href="http://www.podcastgenerator.net/demoV2/">Demo</a></li>
+					<li><a href="help.html">Help</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<ul class="sidenav" id="mobile-demo">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="download.html">Download</a></li>
+			<li><a href="http://www.podcastgenerator.net/demoV2/">Demo</a></li>
+			<li><a href="help.html">Help</a></li>
+		</ul>
+	</header>
+	<main>
+		<div class="container">
+			<div class="section">
+				<div>
+					<h1>Download Podcast Generator</h1>
+					<p>
+						<h4>Latest Release</h4>
+						<div class="release">
+							<h5>2.7</h5>
+							<p>ZIP package containing the latest stable release of Podcast Generator.</p>
+							<a class="waves-effect waves-light btn-large red darken-3" href="https://github.com/albertobeta/PodcastGenerator/archive/v2.7.zip">Download Podcast Generator</a><br>
+							<p>100% Free, Easy web setup wizard, PHP 7.0+ required, No MySQL/Postgres</p>
+						</div>
+						<small>
+							Need a hosting space? Our <a href="https://rss.com/how-to-create-an-rss-feed-for-a-podcast/">official partner</a> offers a fully managed podcasting service powered by Podcast Generator. Setup your new podcast in less than 3 minutes. No technical skills and no maintenance required. Check it out: <a href="https://rss.com/how-to-create-an-rss-feed-for-a-podcast/">rss.com</a>
+						</small>
+					</p>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="page-footer green darken-1">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">Podcast Generator</h5>
+					<p class="grey-text text-lighten-4">Open Source Podcast Publishing Solution since 2006</p>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© 2006-2019 Alberto Betella, Emil Engler and others
+				<a class="grey-text text-lighten-4 right" href="https://github.com/albertobeta/PodcastGenerator">GitHub</a>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
+	<script src="js/materialize.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.sidenav').sidenav();
+		});
+	</script>
+</body>
+</html>
