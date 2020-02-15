@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast Generator Config Scrapper</title>
+    <style>
+        #wrapper {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Podcast Generator Config Scrapper</h1>
+        <h3 id="hidden" style="display: none; color: green;">Success, copy & paste the textbox content</h3>
+        <p>
+            When you are looking for help in Podcast Generator, we often need your config.php.<br>
+            However these file contains some serious personal data which we don't need so this tool cuts them off.<br>
+            <b>Everything you'll do here stays here, nothing will leave your browser (It is done by Javascript)</b><br>
+            <b>Please review the output if the output is correct and contains no sensitive output. No tool is perfect</b><br><br>
+            <textarea id="config" rows="50" cols="100"></textarea><br>
+            <button id="eval" onclick="evaluate()">Evaluate</button>
+        </p>
+    </div>
+    <script text="type/javascript">
+    function evaluate() {
+        let lines = (document.getElementById('config').value).split("\n");
+        const itemsToCensor = [
+            "installationKey",
+            "username",
+            "userpassword",
+            "podcast_title",
+            "podcast_subtitle",
+            "podcast_description",
+            "author_name",
+            "author_email",
+            "copyright",
+            "explicit_podcast",
+            "url"
+        ];
+        let dontInclude = [];
+        for(let i = 0; i < lines.length; i++) {
+            if(lines[i] == "" || lines[i] == "<?php" || lines[i] == "?>") {
+                continue;
+            }
+            let words = lines[i].split(" ");
+            if(itemsToCensor.includes(words[0].substr(1))) {
+                lines[i] = "CENSORED " + words[0].substr(1);
+            }
+        }
+        let output = "";
+        for(let i = 0; i < lines.length; i++) {
+            output += lines[i] + "\n";
+        }
+        document.getElementById('config').value = output;
+        document.getElementById('config').select();
+        document.getElementById('hidden').style = "display: inline-block; color: green;";
+    }
+    </script>
+</body>
+</html>
