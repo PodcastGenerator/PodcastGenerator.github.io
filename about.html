@@ -1,109 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Podcast Generator</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="css/materialize.min.css">
-	<link rel="stylesheet" href="css/animate.min.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-	<style type="text/css">
-		.icon-block {
-			padding: 0 15px;
-		}
-		.icon-block .material-icons {
-			font-size: inherit;
-		}
-		body {
-			display: flex;
-			min-height: 100vh;
-			flex-direction: column;
-		}
-
-		main {
-			flex: 1 0 auto;
-		}
-
-	</style>
+    <title>Podcast Generator</title>
+    <meta charset="utf-8">
+    <link ref="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-	<header>
-		<nav>
-			<div class="nav-wrapper green darken-1">
-				<a href="index.html" class="brand-logo">PodcastGenerator</a>
-				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-				<ul class="right hide-on-med-and-down">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="download.html">Download</a></li>
-					<li><a href="http://www.podcastgenerator.net/demoV2/">Demo</a></li>
-					<li><a href="help.html">Help</a></li>
-				</ul>
-			</div>
-		</nav>
+    <header>
+        <nav>
+            <div class="nav-wrapper green darken-1">
+                <a href="index.html" class="brand-logo">PodcastGenerator</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="download.html">Download</a></li>
+                    <li><a href="http://www.podcastgenerator.net/demoV2/">Demo</a></li>
+                    <li><a href="help.html">Help</a></li>
+                </ul>
+            </div>
+        </nav>
 
-		<ul class="sidenav" id="mobile-demo">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="download.html">Download</a></li>
-			<li><a href="http://www.podcastgenerator.net/demoV2/">Demo</a></li>
-			<li><a href="help.html">Help</a></li>
-		</ul>
-	</header>
-	<main>
-		<div class="container">
-			<div class="section">
-				<h1>About Podcast Generator</h1>
-				<p>
-					Podcast Generator (PG) is an open source Content Management System written in PHP and specifically designed for podcast publishing. It provides the user with the tools to easily manage all of the aspects related to the publication of a podcast, from the upload of episodes to its submission to the iTunes or Spotify Store. There is no need for a MySQL Database. It is free open source software which means anyone can contribute <a href="https://github.com/PodcastGenerator/PodcastGenerator">code</a> or <a href="https://www.transifex.com/albertobeta/podcast-generator/dashboard/">translate</a> the project to any language.<br>
-					Podcast Generator has been developed and maintained by <a href="http://www.betella.net">Alberto Betella</a> since 2006. In 2019 <a href="http://emilengler.com">Emil Engler</a> became a maintainer and rewrote the entire codebase. It has been <a href="https://sourceforge.net/projects/podcastgen/files/stats/timeline?dates=2006-03-28+to+2019-12-30">downloaded more than 218k times from Sourceforge servers</a>, it is offered as a preinstalled package by some of the biggest hosting and NAS service providers worldwide, it counts several thousand active users and it has been cited in a number of <a href="http://scholar.google.com/scholar?q=%22podcast+generator%22&btnG=&hl=en">scientific publications</a> and <a href="https://www.google.com/search?q=%22podcastgen.sourceforge.net%22&btnG=Search+Books&tbm=bks&tbo=1#q=%22Podcast+Generator%22&tbm=bks&tbs=bkt:b">books</a>.<br>
-				</p>
-				<h3>Story</h3>
-				<p>
-					Podcast Generator (PG) was originally developed for the academic environment, where teachers often lack the technical skills (or the time) to manage dealing with technicalities of publishing a podcast (e.g. RSS feed creation and update) and prefer to focus on producing quality content for their students.
-					The original idea of PG came from <a href="http://www.marcolazzari.net/">Marco Lazzari</a>, associate professor of computer science at the University of Bergamo (Italy), in December 2005. He wanted to distribute podcast lectures to his students.
-					For this reason, <a href="http://www.betella.net/">Alberto Betella</a> (who, at that time, was a student of prof. Lazzari) started the development of a web-based application that would allow teachers and educators to easily create a podcast by simply uploading multimedia content "as if it was a webmail attachment". With this in mind, PG is conceived to be extremely simple to use and easy to customize, yet still powerful.
-					PG gave life to <a href="http://www.pluriversiradio.it/">"Pluriversiradio"</a>, one of the the first academic podcasts in Europe. The idea was pioneer at that time if one considers that iTunes U, a service by Apple to distribute educational content in podcasting, wouldn't be announced until one year later.
-					PG today has reached <a href="https://sourceforge.net/projects/podcastgen/files/stats/timeline?dates=2006-03-28+to+2019-12-30">218k downloads</a> on SourceForge servers, it counts several thousand active users and it has been cited in a number of <a href="http://scholar.google.com/scholar?q=%22podcast+generator%22&btnG=&hl=en">scientific publications</a> and <a href="https://www.google.com/search?q=%22podcastgen.sourceforge.net%22&btnG=Search+Books&tbm=bks&tbo=1#q=%22Podcast+Generator%22&tbm=bks&tbs=bkt:b">books</a>.
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="download.html">Download</a></li>
+            <li><a href="http://www.podcastgenerator.net/demoV2/">Demo</a></li>
+            <li><a href="help.html">Help</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="container">
+            <div class="section">
+                <h1>About Podcast Generator</h1>
+                <p>
+                    Podcast Generator (PG) is an open source Content Management System written in PHP and specifically designed for podcast publishing. It provides the user with the tools to easily manage all of the aspects related to the publication of a podcast, from the upload of episodes to its submission to the iTunes or Spotify Store. There is no need for a MySQL Database. It is free open source software which means anyone can contribute <a href="https://github.com/PodcastGenerator/PodcastGenerator">code</a> or <a href="https://www.transifex.com/albertobeta/podcast-generator/dashboard/">translate</a> the project to any language.<br>
+                    Podcast Generator has been developed and maintained by <a href="http://www.betella.net">Alberto Betella</a> since 2006. In 2019 <a href="http://emilengler.com">Emil Engler</a> became a maintainer and rewrote the entire codebase. It has been <a href="https://sourceforge.net/projects/podcastgen/files/stats/timeline?dates=2006-03-28+to+2019-12-30">downloaded more than 218k times from Sourceforge servers</a>, it is offered as a preinstalled package by some of the biggest hosting and NAS service providers worldwide, it counts several thousand active users and it has been cited in a number of <a href="http://scholar.google.com/scholar?q=%22podcast+generator%22&btnG=&hl=en">scientific publications</a> and <a href="https://www.google.com/search?q=%22podcastgen.sourceforge.net%22&btnG=Search+Books&tbm=bks&tbo=1#q=%22Podcast+Generator%22&tbm=bks&tbs=bkt:b">books</a>.<br>
+                </p>
+                <h3>Story</h3>
+                <p>
+                    Podcast Generator (PG) was originally developed for the academic environment, where teachers often lack the technical skills (or the time) to manage dealing with technicalities of publishing a podcast (e.g. RSS feed creation and update) and prefer to focus on producing quality content for their students.
+                    The original idea of PG came from <a href="http://www.marcolazzari.net/">Marco Lazzari</a>, associate professor of computer science at the University of Bergamo (Italy), in December 2005. He wanted to distribute podcast lectures to his students.
+                    For this reason, <a href="http://www.betella.net/">Alberto Betella</a> (who, at that time, was a student of prof. Lazzari) started the development of a web-based application that would allow teachers and educators to easily create a podcast by simply uploading multimedia content "as if it was a webmail attachment". With this in mind, PG is conceived to be extremely simple to use and easy to customize, yet still powerful.
+                    PG gave life to <a href="http://www.pluriversiradio.it/">"Pluriversiradio"</a>, one of the the first academic podcasts in Europe. The idea was pioneer at that time if one considers that iTunes U, a service by Apple to distribute educational content in podcasting, wouldn't be announced until one year later.
+                    PG today has reached <a href="https://sourceforge.net/projects/podcastgen/files/stats/timeline?dates=2006-03-28+to+2019-12-30">218k downloads</a> on SourceForge servers, it counts several thousand active users and it has been cited in a number of <a href="http://scholar.google.com/scholar?q=%22podcast+generator%22&btnG=&hl=en">scientific publications</a> and <a href="https://www.google.com/search?q=%22podcastgen.sourceforge.net%22&btnG=Search+Books&tbm=bks&tbo=1#q=%22Podcast+Generator%22&tbm=bks&tbs=bkt:b">books</a>.
 
-				</p>
-				<h3>Thanks</h3>
-				<p>
-					Thanks (in no specific order) to:<br>
-					Marco Lazzari, Alberto Pian, Marco Lambrugo, Mauro Cadei,
+                </p>
+                <h3>Thanks</h3>
+                <p>
+                    Thanks (in no specific order) to:<br>
+                    Marco Lazzari, Alberto Pian, Marco Lambrugo, Mauro Cadei,
                     Riccardo Dondi, Carlos Alberto Scolari, Doug Dangler, Karma
                     Peiró, Mikkel Godsk, Sonia Blanco, Francisco Javier Ruiz
                     San Miguel, Toni Sellas, William H. Booz, C. Michael
                     Pilato, Go-Rom and Chris Charabaruk.
-				</p>
-			</div>
-		</div>
-	</main>
-	<footer class="page-footer green darken-1">
-		<div class="container">
-			<div class="row">
-				<div class="col l6 s12">
-					<h5 class="white-text">Podcast Generator</h5>
-					<p class="grey-text text-lighten-4">Open Source Podcast Publishing Solution since 2006</p>
-				</div>
-			</div>
-		</div>
-		<div class="footer-copyright">
-			<div class="container">
-				© 2006-2020 Alberto Betella, Emil Engler and others
-				<a class="grey-text text-lighten-4 right" href="https://github.com/PodcastGenerator/PodcastGenerator">GitHub</a>
-			</div>
-		</div>
-	</footer>
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer green darken-1">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Podcast Generator</h5>
+                    <p class="grey-text text-lighten-4">Open Source Podcast Publishing Solution since 2006</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2006-2020 Alberto Betella, Emil Engler and others
+                <a class="grey-text text-lighten-4 right" href="https://github.com/PodcastGenerator/PodcastGenerator">GitHub</a>
+            </div>
+        </div>
+    </footer>
 
 
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
-	<script src="js/materialize.min.js" type="text/javascript"></script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$('.sidenav').sidenav();
-		});
-	</script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="js/materialize.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+        });
+    </script>
 </body>
 </html>

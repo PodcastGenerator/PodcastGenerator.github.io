@@ -1,150 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Podcast Generator</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="css/materialize.min.css">
-	<link rel="stylesheet" href="css/animate.min.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-	<style type="text/css">
-		.icon-block {
-			padding: 0 15px;
-		}
-		.icon-block .material-icons {
-			font-size: inherit;
-		}
-		body {
-			display: flex;
-			min-height: 100vh;
-			flex-direction: column;
-		}
-
-		main {
-			flex: 1 0 auto;
-		}
-
-	</style>
+    <title>Podcast Generator</title>
+    <meta charset="utf-8">
+    <link ref="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-	<header>
-		<nav>
-			<div class="nav-wrapper green darken-1">
-				<a href="index.html" class="brand-logo">PodcastGenerator</a>
-				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-				<ul class="right hide-on-med-and-down">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="download.html">Download</a></li>
-					<li><a href="http://www.podcastgenerator.net/demoV2/">Demo</a></li>
-					<li><a href="help.html">Help</a></li>
-				</ul>
-			</div>
-		</nav>
+    <header>
+        <nav>
+            <div class="nav-wrapper green darken-1">
+                <a href="index.html" class="brand-logo">PodcastGenerator</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="download.html">Download</a></li>
+                    <li><a href="http://www.podcastgenerator.net/demoV2/">Demo</a></li>
+                    <li><a href="help.html">Help</a></li>
+                </ul>
+            </div>
+        </nav>
 
-		<ul class="sidenav" id="mobile-demo">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="download.html">Download</a></li>
-			<li><a href="http://www.podcastgenerator.net/demoV2/">Demo</a></li>
-			<li><a href="help.html">Help</a></li>
-		</ul>
-	</header>
-	<main>
-		<div class="container">
-			<div class="section">
-				<div class="center">
-					<h1>Podcast Generator</h1>
-					<p>
-						Open Source Podcast Publishing Solution since 2006<br>
-						<br>
-						<a href="download.html" class="waves-effect waves-light btn-large green darken-1">Get It</a>
-					</p>
-				</div>
-				<div class="row">
-					<div class="col s12 m4 animated lightSpeedIn">
-						<div class="icon-block">
-							<h2 class="center"><i class="material-icons">flash_on</i></h2>
-							<h4 class="center">Click & Go</h4>
-							<p>
-								Extremely quick 3-step installaiot. Works in any web hosting with PHP. No Database rquired!
-							</p>
-						</div>
-					</div>
-					<div class="col s12 m4 animated lightSpeedIn">
-						<div class="icon-block">
-							<h2 class="center"><i class="material-icons">child_care</i></h2>
-							<h4 class="center">Power & Simple</h4>
-							<p>
-								Easy & intuitive web interface to publish audio and video podcasts.
-							</p>
-						</div>
-					</div>
-					<div class="col s12 m4 animated lightSpeedIn">
-						<div class="icon-block">
-							<h2 class="center"><i class="material-icons">rss_feed</i></h2>
-							<h4 class="center">Newbie-Proof technology</h4>
-							<p>
-								Just upload your content. All the rest is "automagic".
-							</p>
-						</div>
-					</div>
-					<div class="col s12 m4 animated lightSpeedIn">
-						<div class="icon-block">
-							<h2 class="center"><i class="material-icons">g_translate</i></h2>
-							<h4 class="center">Customizable</h4>
-							<p>
-								Support for multiple themes and languages.
-							</p>
-						</div>
-					</div>
-					<div class="col s12 m4 animated lightSpeedIn">
-						<div class="icon-block">
-							<h2 class="center"><i class="material-icons">cloud_upload</i></h2>
-							<h4 class="center">Cross-Platform</h4>
-							<p>
-								Works with iTunes, Spotify and friends.
-							</p>
-						</div>
-					</div>
-					<div class="col s12 m4 animated lightSpeedIn">
-						<div class="icon-block">
-							<h2 class="center"><i class="material-icons">code</i></h2>
-							<h4 class="center">Open Source</h4>
-							<p>
-								This is 100% free software under GPLv3. Really, no bamboozle!
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</main>
-	<footer class="page-footer green darken-1">
-		<div class="container">
-			<div class="row">
-				<div class="col l6 s12">
-					<h5 class="white-text">Podcast Generator</h5>
-					<p class="grey-text text-lighten-4">Open Source Podcast Publishing Solution since 2006</p>
-				</div>
-			</div>
-		</div>
-		<div class="footer-copyright">
-			<div class="container">
-				© 2006-2020 Alberto Betella, Emil Engler and others
-				<a class="grey-text text-lighten-4 right" href="https://github.com/PodcastGenerator/PodcastGenerator">GitHub</a>
-			</div>
-		</div>
-	</footer>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="download.html">Download</a></li>
+            <li><a href="http://www.podcastgenerator.net/demoV2/">Demo</a></li>
+            <li><a href="help.html">Help</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="container">
+            <div class="section">
+                <div class="center">
+                    <h1>Podcast Generator</h1>
+                    <p>
+                        Open Source Podcast Publishing Solution since 2006<br>
+                        <br>
+                        <a href="download.html" class="waves-effect waves-light btn-large green darken-1">Get It</a>
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col s12 m4 animated lightSpeedIn">
+                        <div class="icon-block">
+                            <h2 class="center"><i class="material-icons">flash_on</i></h2>
+                            <h4 class="center">Click & Go</h4>
+                            <p>
+                                Extremely quick 3-step installaiot. Works in any web hosting with PHP. No Database rquired!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col s12 m4 animated lightSpeedIn">
+                        <div class="icon-block">
+                            <h2 class="center"><i class="material-icons">child_care</i></h2>
+                            <h4 class="center">Power & Simple</h4>
+                            <p>
+                                Easy & intuitive web interface to publish audio and video podcasts.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col s12 m4 animated lightSpeedIn">
+                        <div class="icon-block">
+                            <h2 class="center"><i class="material-icons">rss_feed</i></h2>
+                            <h4 class="center">Newbie-Proof technology</h4>
+                            <p>
+                                Just upload your content. All the rest is "automagic".
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col s12 m4 animated lightSpeedIn">
+                        <div class="icon-block">
+                            <h2 class="center"><i class="material-icons">g_translate</i></h2>
+                            <h4 class="center">Customizable</h4>
+                            <p>
+                                Support for multiple themes and languages.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col s12 m4 animated lightSpeedIn">
+                        <div class="icon-block">
+                            <h2 class="center"><i class="material-icons">cloud_upload</i></h2>
+                            <h4 class="center">Cross-Platform</h4>
+                            <p>
+                                Works with iTunes, Spotify and friends.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col s12 m4 animated lightSpeedIn">
+                        <div class="icon-block">
+                            <h2 class="center"><i class="material-icons">code</i></h2>
+                            <h4 class="center">Open Source</h4>
+                            <p>
+                                This is 100% free software under GPLv3. Really, no bamboozle!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer green darken-1">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Podcast Generator</h5>
+                    <p class="grey-text text-lighten-4">Open Source Podcast Publishing Solution since 2006</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2006-2020 Alberto Betella, Emil Engler and others
+                <a class="grey-text text-lighten-4 right" href="https://github.com/PodcastGenerator/PodcastGenerator">GitHub</a>
+            </div>
+        </div>
+    </footer>
 
 
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
-	<script src="js/materialize.min.js" type="text/javascript"></script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$('.sidenav').sidenav();
-		});
-	</script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="js/materialize.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+        });
+    </script>
 </body>
 </html>
