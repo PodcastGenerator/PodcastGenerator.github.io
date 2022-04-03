@@ -20,11 +20,11 @@
             <b>Everything you'll do here stays here, nothing will leave your browser (It is done by Javascript)</b><br>
             <b>Please review the output if the output is correct and contains no sensitive output. No tool is perfect</b><br><br>
             <textarea id="config" rows="50" cols="100"></textarea><br>
-            <button id="eval" onclick="evaluate()">Evaluate</button>
+            <button id="eval" onclick="censorConfig()">Evaluate</button>
         </p>
     </div>
     <script text="type/javascript">
-    function evaluate() {
+    function censorConfig() {
         let lines = (document.getElementById('config').value).split("\n");
         const itemsToCensor = [
             "installationKey",
